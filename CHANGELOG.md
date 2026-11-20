@@ -1,3 +1,9 @@
+## [Unreleased]
+
+### Features
+
+- **scoop-mxc:** Add MXC sandbox execution for installed apps and an MXC executor manifest.
+
 ## [v0.6.0](https://github.com/ScoopInstaller/Scoop/compare/v0.5.3...v0.6.0) - 2026-09-30
 
 ### Features
