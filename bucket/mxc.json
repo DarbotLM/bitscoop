@@ -1,0 +1,33 @@
+{
+    "version": "1.1.0",
+    "description": "Microsoft eXecution Container (MXC) sandbox executor (wxc-exec)",
+    "homepage": "https://www.npmjs.com/package/@microsoft/mxc-sdk",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://registry.npmjs.org/@microsoft/mxc-sdk/-/mxc-sdk-1.1.0.tgz",
+            "hash": "22806bcc1ff61768c47c8463905129cd479a96bcfcd54c9acf93f316e4b82e19",
+            "extract_dir": "package\\bin\\x64"
+        },
+        "arm64": {
+            "url": "https://registry.npmjs.org/@microsoft/mxc-sdk/-/mxc-sdk-1.1.0.tgz",
+            "hash": "22806bcc1ff61768c47c8463905129cd479a96bcfcd54c9acf93f316e4b82e19",
+            "extract_dir": "package\\bin\\arm64"
+        }
+    },
+    "bin": "wxc-exec.exe",
+    "checkver": {
+        "url": "https://registry.npmjs.org/@microsoft/mxc-sdk/latest",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://registry.npmjs.org/@microsoft/mxc-sdk/-/mxc-sdk-$version.tgz"
+            },
+            "arm64": {
+                "url": "https://registry.npmjs.org/@microsoft/mxc-sdk/-/mxc-sdk-$version.tgz"
+            }
+        }
+    }
+}
